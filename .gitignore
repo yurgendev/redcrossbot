@@ -1,0 +1,7 @@
+*.pyc
+/venv/
+secrets.py
+/log/
+*.db
+__pycache__/
+.idea/

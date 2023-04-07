@@ -11,3 +11,4 @@ requests==2.28.2
 urllib3==1.26.15
 Werkzeug==2.2.3
 telebot
+gunicorn

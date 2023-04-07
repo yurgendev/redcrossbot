@@ -3,8 +3,8 @@ import telebot
 import os
 
 app = Flask(__name__)
-# TOKEN = '6209070455:AAHVf08Z-bCK2KaVUw60h2crCSgbFoVgmI8'
-TOKEN = os.environ.get('TOKEN')
+TOKEN = '6209070455:AAHVf08Z-bCK2KaVUw60h2crCSgbFoVgmI8'
+# TOKEN = os.environ.get('TOKEN')
 bot = telebot.TeleBot(TOKEN)
 
 
@@ -22,7 +22,7 @@ def get_message():
 @app.route('/')
 def main():
     bot.remove_webhook()
-    bot.set_webhook(url='https://redcrossbot.herokuapp.com' + TOKEN)
+    bot.set_webhook(url='https://redcrossbot.herokuapp.com/webhook/' + TOKEN)
     return 'Python Telegram Bot', 200
 
 

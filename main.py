@@ -22,7 +22,7 @@ def get_message():
 @app.route('/')
 def main():
     bot.remove_webhook()
-    bot.set_webhook(url='https://redcrossbot.herokuapp.com/webhook/' + TOKEN)
+    bot.set_webhook(url='https://redcrossbot.herokuapp.com/' + TOKEN)
     return 'Python Telegram Bot', 200
 
 

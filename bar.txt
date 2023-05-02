@@ -1,0 +1,33 @@
+<b>Оберіть зі списку популярні ресторани й бари та дозвольте собі насолодитись найсмачнішими стравами та напоями!</b>
+
+<a href="https://www.google.com/maps/place/California+%D1%81%D1%83%D1%88%D1%96-%D0%B1%D0%B0%D1%80/@49.5170706,23.1959581,15z/data=!4m2!3m1!1s0x0:0x620131750d526b29?sa=X&ved=2ahUKEwiv65bptML-AhU57rsIHR9vAdEQ_BJ6BAhuEAg&amp;mode=map">California суші-бар</a>
+
+<a href="https://www.google.com/maps/place/Restaurant+Palermo/@49.5185275,23.1934959,17z/data=!3m1!4b1!4m6!3m5!1s0x473ba50558c30895:0xefc39cf65a04a1ad!8m2!3d49.518524!4d23.1960708!16s%2Fg%2F11bxfhqgs3&amp;mode=map">Ресторан Palermo </a>
+
+<a href="https://www.google.com/maps/place/Sambeer+PUB/@49.5163342,23.1992145,15z/data=!4m6!3m5!1s0x473ba511d1a099eb:0xd014ff19dadee6bb!8m2!3d49.5163342!4d23.1992145!16s%2Fg%2F11cn9qjtcs&amp;mode=map">Sambeer PUB🍻</a>
+
+<a href="https://www.google.com/maps/place/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD+%C2%AB%D0%9A%D0%B0%D1%88%D1%82%D0%B0%D0%BD%C2%BB/@49.6966824,23.0632138,9.36z/data=!4m6!3m5!1s0x473ba50cee5400d9:0xe634185730d6a71c!8m2!3d49.5181873!4d23.2098395!16s%2Fg%2F11cr__b7fb&amp;mode=map">Ресторан «Каштан»</a>
+
+<a href="https://www.google.com/maps/place/Sushi+%22Tita%22/@49.5183103,23.1923874,17z/data=!3m1!4b1!4m16!1m9!4m8!1m0!1m6!1m2!1s0x473ba51715f526f1:0x36e190569a95b69e!2z0LLRg9C70LjRhtGPINCh0LDQvNCx0ZbRgNGH0LjQutCwLCAxLCDQodCw0LzQsdGW0YAsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgODE0MDA!2m2!1d23.1949623!2d49.5183068!3m5!1s0x473ba51715f526f1:0x36e190569a95b69e!8m2!3d49.5183068!4d23.1949623!16s%2Fg%2F11ppwdxtwh&amp;mode=map">Sushi "Tita"</a>
+
+<a href="https://www.google.com/maps/place/OLD+CITY+%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD+%D0%BF%D1%96%D1%86%D0%B5%D1%80%D1%96%D1%8F/@49.5176506,23.2042007,15z/data=!4m2!3m1!1s0x0:0x3a54165bbf15865d?sa=X&ved=2ahUKEwi068Pkt8L-AhWMgv0HHexoD8UQ_BJ6BAhxEAg&amp;mode=map">"OLD CITY" -  ресторан піцерія</a>
+
+<a href="https://www.google.com/maps/place/%D0%94%D0%A1+%D0%91%D1%96%D1%81%D1%82%D1%80%D0%BE+%D0%94%D0%B5%D1%88%D0%B5%D0%B2%D0%BE+%D1%82%D0%B0+%D0%A1%D0%BC%D0%B0%D1%87%D0%BD%D0%BE/@49.5164375,23.2102546,15z/data=!4m6!3m5!1s0x473ba5b3c46130ef:0x494b29381f2639ae!8m2!3d49.5164375!4d23.2102546!16s%2Fg%2F11j7qq02cq&amp;mode=map">ДС Бістро Дешево та Смачно</a>
+
+<a href="https://www.google.com/maps/place/%D0%A1%D0%B8%D1%86%D0%B8%D0%BB%D1%96%D1%8F/@49.5187303,23.1984534,15z/data=!4m6!3m5!1s0x473ba5912fbac1b3:0xc5d148854ef110fb!8m2!3d49.5187263!4d23.1984381!16s%2Fg%2F11gy1vcgvs&amp;mode=map">Сицилія Піцца</a>
+
+<a href="https://www.google.com/maps/place/%D0%9C%D0%BE%D1%82%D0%B5%D0%BB%D1%8C+-+%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD+%C2%AB%D0%90%D0%BA%D0%B2%D0%B0%D0%BC%D0%B0%D1%80%D0%B8%D0%BD%C2%BB/@49.5249703,23.1834481,15z/data=!4m9!3m8!1s0x473ba5b85d1319b1:0x54454c4ba029b992!5m2!4m1!1i2!8m2!3d49.5249703!4d23.1834481!16s%2Fg%2F11rhhxqnk5&amp;mode=map">Мотель - Ресторан "Аквамарин"</a>
+
+<a href="https://www.google.com/maps/place/%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0+%D1%81%D1%83%D1%88%D1%96+Sushi+Zoom+%D0%A1%D0%B0%D0%BC%D0%B1%D1%96%D1%80+%D0%A1%D1%83%D1%88%D1%96+%D0%97%D1%83%D0%BC/@49.5172443,23.1956388,15z/data=!4m6!3m5!1s0x473ba5073c99ef1d:0x44ff75f647421072!8m2!3d49.5172443!4d23.1956388!16s%2Fg%2F11mx3qpn0_&amp;mode=map">Доставка суші - Самбір Суші Зум</a>
+
+<a href="https://www.google.com/maps/place/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD+%E2%80%9C%D0%9C%D0%B0%D0%B3%D0%BD%D0%B0%D1%82%E2%80%9D/@49.5322834,23.2418026,15z/data=!4m9!3m8!1s0x473ba591d5911961:0xd3b5b545a35fb63a!5m2!4m1!1i2!8m2!3d49.5322834!4d23.2418026!16s%2Fg%2F11c1ml4xtx&amp;mode=map">Ресторан "Магнат"</a>
+
+<a href="https://www.google.com/maps/place/Manifik/@49.5186581,23.1977784,15z/data=!4m6!3m5!1s0x473ba5f7764700f9:0x400316f0d9a162c!8m2!3d49.5186581!4d23.1977784!16s%2Fg%2F11rrj5qxwb&amp;mode=map">Ресторан "Manifik" </a>
+
+<a href="https://www.google.com/maps/place/%D0%9F%D1%96%D1%86%D0%B5%D1%80%D1%96%D1%8F+%C2%AB%D0%9C%D1%96%D1%8F%C2%BB/@49.5165689,23.1952994,15z/data=!4m6!3m5!1s0x473ba5c2d6291fdd:0x2b2a00c48035c516!8m2!3d49.5165689!4d23.1952994!16s%2Fg%2F11q90pf_6_&amp;mode=map">Піцерія "Мія"</a>
+
+
+
+
+
+

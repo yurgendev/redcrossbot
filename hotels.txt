@@ -1,0 +1,11 @@
+<b> Ось список наших готелів, ви можете обрати той, який найбільше підходить вашим потребам, знайти та забронювати номер просто натиснувши на нього:</b>
+
+📍Motel Elephant можна знайти <a href="https://www.google.com/maps/place/Motel+Elephant/@49.4530949,23.0131059,15z/data=!4m9!3m8!1s0x473bbd98347562db:0xcb4a4ca937798192!5m2!4m1!1i2!8m2!3d49.4530949!4d23.0131059!16s%2Fg%2F11fflyv3zv&amp;mode=map"> за посиланням</a>
+
+📍Ресторан-Готель "СОНАТА" знаходиться<a href="https://www.google.com/maps/place/Ресторан-Готель+%22СОНАТА%22/@49.5070178,23.194561,17z/data=!3m1!4b1!4m9!3m8!1s0x473ba515857273b3:0x7d688cbcd9a61fb3!5m2!4m1!1i2!8m2!3d49.5070178!4d23.1971359!16s%2Fg%2F11b7q467xq&amp;mode=map"> за посиланням</a>
+
+📍Мотель - Ресторан <a href="https://www.google.com/maps/place/%D0%9C%D0%BE%D1%82%D0%B5%D0%BB%D1%8C+-+%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD+%C2%AB%D0%90%D0%BA%D0%B2%D0%B0%D0%BC%D0%B0%D1%80%D0%B8%D0%BD%C2%BB/@49.5249703,23.1834481,15z/data=!4m9!3m8!1s0x473ba5b85d1319b1:0x54454c4ba029b992!5m2!4m1!1i2!8m2!3d49.5249703!4d23.1834481!16s%2Fg%2F11rhhxqnk5&amp;mode=map"> «Аквамарин» </a>
+
+📍Hotel "Imperial" <a href="https://www.google.com/maps/place/Hotel+%22Imperial%22/@49.5177778,23.1977778,15z/data=!4m9!3m8!1s0x473ba50fe3a2aab7:0x31a3d1c7ffbf198a!5m2!4m1!1i2!8m2!3d49.5177778!4d23.1977778!16s%2Fg%2F1pp2vjv6_&amp;mode=map">тут</a>
+
+📍Saltzbork <a href="https://www.google.com/maps/place/Saltzbork/@49.4732225,22.9761402,15z/data=!4m9!3m8!1s0x473bbd84adf28f3d:0xfaaa6eeb6ea68092!5m2!4m1!1i2!8m2!3d49.4732225!4d22.9761402!16s%2Fg%2F11g8bwtjq0&amp;mode=map">знаходиться тут</a>

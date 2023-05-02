@@ -1,0 +1,10 @@
+<b>Заклади швидкого харчування:</b>
+
+Мережа пекарень <a href="https://www.google.com/maps/place/Vash+Lavash+Vul.+Sahaydachnoho8/@49.5169529,23.1987248,15z/data=!4m6!3m5!1s0x473ba5b5758f6131:0x327378a4f1e70611!8m2!3d49.5169529!4d23.1987248!16s%2Fg%2F11rxtyxz63&amp;mode=map">Vash Lavash</a>
+
+Franki Burgers, або <a href="https://www.google.com/maps/place/McFood/@49.518542,23.1912146,17z/data=!3m1!4b1!4m6!3m5!1s0x473ba5bdab819241:0xc7bbfa7ffd6032a4!8m2!3d49.5185385!4d23.1937895!16s%2Fg%2F11sn_4wr6q&amp;mode=map">McFood</a>
+
+Шаурма <a href="https://www.google.com/maps/place/Shawarma+Station/@49.516472,23.1982852,17z/data=!3m1!4b1!4m6!3m5!1s0x473ba5155c75f455:0xbfcb1559b4d2c752!8m2!3d49.5164685!4d23.2008601!16s%2Fg%2F11rxnlw4_f&amp;mode=map">Shawarma Station</a>
+
+Pit Lane Burger - <a href="https://www.google.com/maps/place/Pitlane+Burger/@49.5178747,23.1904073,17z/data=!3m1!4b1!4m6!3m5!1s0x473ba5055567f3f1:0xfc75c86cf6fc5c2c!8m2!3d49.5178713!4d23.1952782!16s%2Fg%2F11fy2q49dc&amp;mode=map">Бургери</a>
+

@@ -160,12 +160,16 @@ def section_message(message):
 # кнопка "Корисні посилання"
 @bot.message_handler(func=lambda message: message.text == "Корисні посилання")
 def other_button(message):
-    keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
-    keyboard.add(types.KeyboardButton(MAIN_MENU_BUTTON))
-    bot.send_message(message.chat.id, "Корисні посилання", reply_markup=keyboard)
+    with open('images/useful_links.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
+
     with open('other.txt', 'r', encoding='utf-8') as file:
         text = file.read()
-    bot.send_message(message.chat.id, text=text, parse_mode='HTML')
+
+    keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
+    keyboard.add(types.KeyboardButton(MAIN_MENU_BUTTON))
+    bot.send_message(message.chat.id, text=text, parse_mode='HTML', reply_markup=keyboard)
+
 
 
 @bot.message_handler(func=lambda message: message.text == "Заходи для відпочинку та розвитку")

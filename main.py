@@ -45,12 +45,16 @@ def safety_button(message):
 
 @bot.message_handler(func=lambda message: message.text == "Поліція")
 def police_message(message):
+    with open('images/cops.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     bot.send_message(message.chat.id, "Поліція: \n"
                                       "вул. Степана Бандрери, 14")
 
 
 @bot.message_handler(func=lambda message: message.text == "Укриття")
 def shelter_message(message):
+    with open('images/shelter.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     with open('security_text.txt', 'r') as file:
         text = file.read()
     bot.send_message(message.chat.id, text)
@@ -58,6 +62,8 @@ def shelter_message(message):
 
 @bot.message_handler(func=lambda message: message.text == "Правова допомога")
 def lawyer_message(message):
+    with open('images/law_help.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     with open('law.txt', 'r', encoding='utf-8') as file:
         text = file.read()
     bot.send_message(message.chat.id, text=text, parse_mode='HTML')
@@ -66,6 +72,8 @@ def lawyer_message(message):
 # кнопка "ДОПОМОГА"
 @bot.message_handler(func=lambda message: message.text == "Допомога")
 def help_button(message):
+    with open('images/help.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     keyboard = types.ReplyKeyboardMarkup(row_width=2, resize_keyboard=True)
     keyboard.add(types.KeyboardButton("Фінансова допомога"), types.KeyboardButton("Гуманітарна допомога"),
                  types.KeyboardButton("Житло"), types.KeyboardButton("Одяг"),
@@ -76,6 +84,8 @@ def help_button(message):
 
 @bot.message_handler(func=lambda message: message.text == "Фінансова допомога")
 def financial_help_message(message):
+    with open('images/finance.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     bot.send_message(message.chat.id, "1. Консультативно-координаційний центр допомоги ВПО — "
                                       "вул. І.Мазепи, 8, каб. 2\n\n"
 
@@ -84,6 +94,8 @@ def financial_help_message(message):
 
 @bot.message_handler(func=lambda message: message.text == "Гуманітарна допомога")
 def humanitarian_aid_message(message):
+    with open('images/humanitarian.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     with open('humanitarian_help_text.txt', 'r', encoding='utf-8') as file:
         text = file.read()
     bot.send_message(message.chat.id, text=text, parse_mode='HTML')
@@ -91,6 +103,8 @@ def humanitarian_aid_message(message):
 
 @bot.message_handler(func=lambda message: message.text == "Житло")
 def housing_message(message):
+    with open('images/home.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     with open('housing.txt', 'r', encoding='utf-8') as file:
         text = file.read()
     bot.send_message(message.chat.id, text=text, parse_mode='HTML')
@@ -98,11 +112,15 @@ def housing_message(message):
 
 @bot.message_handler(func=lambda message: message.text == "Одяг")
 def clothing_message(message):
+    with open('images/cloth.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     bot.send_message(message.chat.id, "Банк одягу — ТЧХУ вул. І. Мазепи, 8, каб. 54")
 
 
 @bot.message_handler(func=lambda message: message.text == "Контакти і місцерозташування служб")
 def help_contacts_message(message):
+    with open('images/contacts.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     with open('contacts.txt', 'r', encoding='utf-8') as file:
         text = file.read()
     bot.send_message(message.chat.id, text=text, parse_mode='HTML')
@@ -114,6 +132,8 @@ def hospital_button(message):
     keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
     keyboard.add(types.KeyboardButton(MAIN_MENU_BUTTON))
     bot.send_message(message.chat.id, "Заклади охорони здоров\'я", reply_markup=keyboard)
+    with open('images/health.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     with open('healthy.txt', 'r', encoding='utf-8') as file:
         text = file.read()
     bot.send_message(message.chat.id, text=text, parse_mode='HTML')
@@ -131,6 +151,8 @@ def education_button(message):
 
 @bot.message_handler(func=lambda message: message.text == "Коледжі")
 def university_message(message):
+    with open('images/colleges.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     with open('high_schools.txt', 'r', encoding='utf-8') as file:
         text = file.read()
     bot.send_message(message.chat.id, text=text, parse_mode='HTML')
@@ -138,6 +160,8 @@ def university_message(message):
 
 @bot.message_handler(func=lambda message: message.text == "Школи")
 def school_message(message):
+    with open('images/schools.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     with open('schools.txt', 'r', encoding='utf-8') as file:
         text = file.read()
     bot.send_message(message.chat.id, text=text, parse_mode='HTML')
@@ -145,6 +169,8 @@ def school_message(message):
 
 @bot.message_handler(func=lambda message: message.text == "Садки")
 def kindergarten_message(message):
+    with open('images/kids_garden.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     with open('gardens.txt', 'r', encoding='utf-8') as file:
         text = file.read()
     bot.send_message(message.chat.id, text=text, parse_mode='HTML')
@@ -152,6 +178,8 @@ def kindergarten_message(message):
 
 @bot.message_handler(func=lambda message: message.text == "Гуртки")
 def section_message(message):
+    with open('images/hobbies.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     with open('hobby.txt', 'r', encoding='utf-8') as file:
         text = file.read()
     bot.send_message(message.chat.id, text=text, parse_mode='HTML')
@@ -162,14 +190,12 @@ def section_message(message):
 def other_button(message):
     with open('images/useful_links.png', 'rb') as image:
         bot.send_photo(message.chat.id, photo=image)
-
     with open('other.txt', 'r', encoding='utf-8') as file:
         text = file.read()
 
     keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
     keyboard.add(types.KeyboardButton(MAIN_MENU_BUTTON))
     bot.send_message(message.chat.id, text=text, parse_mode='HTML', reply_markup=keyboard)
-
 
 
 @bot.message_handler(func=lambda message: message.text == "Заходи для відпочинку та розвитку")
@@ -180,10 +206,14 @@ def other_message(message):
                  types.KeyboardButton("Фастфуд"), types.KeyboardButton("Кафе"),
                  types.KeyboardButton(MAIN_MENU_BUTTON))
     bot.send_message(message.chat.id, "Виберіть підрозділ, який вас цікавить:", reply_markup=keyboard)
+    with open('images/chill.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
 
 
 @bot.message_handler(func=lambda message: message.text == "Салони краси")
 def shelter_message(message):
+    with open('images/beauty.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     with open('salons.txt', 'r', encoding='utf-8') as file:
         text = file.read()
         text = text.replace('%2B', '+')
@@ -192,6 +222,8 @@ def shelter_message(message):
 
 @bot.message_handler(func=lambda message: message.text == "Готелі")
 def hotel_message(message):
+    with open('images/hotels.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     with open('hotels.txt', 'r', encoding='utf-8') as file:
         text = file.read()
     bot.send_message(message.chat.id, text=text, parse_mode='HTML')
@@ -199,6 +231,8 @@ def hotel_message(message):
 
 @bot.message_handler(func=lambda message: message.text == "Ресторани/бари")
 def bars_message(message):
+    with open('images/restaraunts.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     with open('bar.txt', 'r', encoding='utf-8') as file:
         text = file.read()
     bot.send_message(message.chat.id, text=text, parse_mode='HTML')
@@ -206,6 +240,8 @@ def bars_message(message):
 
 @bot.message_handler(func=lambda message: message.text == "Фастфуд")
 def fastfood_message(message):
+    with open('images/fastfood.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     with open('fastfood.txt', 'r', encoding='utf-8') as file:
         text = file.read()
     bot.send_message(message.chat.id, text=text, parse_mode='HTML')
@@ -213,6 +249,8 @@ def fastfood_message(message):
 
 @bot.message_handler(func=lambda message: message.text == "Кафе")
 def cafe_message(message):
+    with open('images/cafe.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     with open('cafe.txt', 'r', encoding='utf-8') as file:
         text = file.read()
     bot.send_message(message.chat.id, text=text, parse_mode='HTML')

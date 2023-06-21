@@ -269,6 +269,10 @@ def sambir_info(message):
     with open('help_directions.txt', 'r', encoding='utf-8') as file:
         text = file.read()
     bot.send_message(message.chat.id, text=text, parse_mode='HTML')
+    bot.send_message(message.chat.id, "Instagram:\nhttps://www.instagram.com/redcross.sambir/?igshid=YmM0MjE2YWMzOA%3D%3D\n"
+                                      "Facebook:\nhttps://www.facebook.com/profile.php?id=100083105293557")
+
+
 
 
 

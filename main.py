@@ -258,19 +258,45 @@ def cafe_message(message):
 
 @bot.message_handler(func=lambda message: message.text == "Самбірська РО ТЧХУ")
 def sambir_info_button(message):
+    with open('images/sambir_logo.png', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
     keyboard = types.ReplyKeyboardMarkup(row_width=2, resize_keyboard=True)
-    keyboard.add(types.KeyboardButton("Напрямки організації"), types.KeyboardButton("Гуманітарна допомога для ВПО"),
-                 types.KeyboardButton("Гуманітарна допомога для ВПО"), types.KeyboardButton(MAIN_MENU_BUTTON))
+    keyboard.add(types.KeyboardButton("Напрямки організації"), types.KeyboardButton("Отримати гуманітарну допомогу"),
+                 types.KeyboardButton("Хочу стати волонтером"), types.KeyboardButton(MAIN_MENU_BUTTON))
     bot.send_message(message.chat.id, "Наша організація розвиває декілька напрямків:", reply_markup=keyboard)
 
 
 @bot.message_handler(func=lambda message: message.text == "Напрямки організації")
-def sambir_info(message):
+def sambir_info_links(message):
     with open('help_directions.txt', 'r', encoding='utf-8') as file:
         text = file.read()
     bot.send_message(message.chat.id, text=text, parse_mode='HTML')
     bot.send_message(message.chat.id, "Instagram:\nhttps://www.instagram.com/redcross.sambir/?igshid=YmM0MjE2YWMzOA%3D%3D\n"
                                       "Facebook:\nhttps://www.facebook.com/profile.php?id=100083105293557")
+
+
+@bot.message_handler(func=lambda message: message.text == "Отримати гуманітарну допомогу")
+def get_hum_help(message):
+    with open('humanitarian_aid_info.txt', 'r', encoding='utf-8') as file:
+        text = file.read()
+    bot.send_message(message.chat.id, text=text, parse_mode='HTML')
+    bot.send_message(message.chat.id, "https://docs.google.com/forms/d/1OnLFgKkffS5UY2FvLlD0FRkZuTJ2Na0pYeQCDuUw9d8/viewform?edit_requested=true")
+    bot.send_message(message.chat.id, "А також долучайся до наших соц.мереж❤️")
+    bot.send_message(message.chat.id,
+                    "Instagram:\nhttps://www.instagram.com/redcross.sambir/?igshid=YmM0MjE2YWMzOA%3D%3D\n"
+                    "Facebook:\nhttps://www.facebook.com/profile.php?id=100083105293557")
+
+
+
+@bot.message_handler(func=lambda message: message.text == "Хочу стати волонтером")
+def volunteer(message):
+    with open('volunteer.txt', 'r', encoding='utf-8') as file:
+        text = file.read()
+    bot.send_message(message.chat.id, text=text, parse_mode='HTML')
+    bot.send_message(message.chat.id, "А також долучайся до наших соц.мереж❤️")
+    bot.send_message(message.chat.id,
+                     "Instagram:\nhttps://www.instagram.com/redcross.sambir/?igshid=YmM0MjE2YWMzOA%3D%3D\n"
+                     "Facebook:\nhttps://www.facebook.com/profile.php?id=100083105293557")
 
 
 

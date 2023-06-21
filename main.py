@@ -23,7 +23,7 @@ def create_main_menu_keyboard():
     keyboard.add(*[types.KeyboardButton(name) for name in [
         'Безпека', 'Допомога', 'Заклади охорони здоров\'я',
         'Освітні заклади', 'Заходи для відпочинку та розвитку',
-        'Корисні посилання'
+        'Корисні посилання', 'Самбірська РО ТЧХУ'
     ]])
     return keyboard
 
@@ -254,6 +254,25 @@ def cafe_message(message):
     with open('cafe.txt', 'r', encoding='utf-8') as file:
         text = file.read()
     bot.send_message(message.chat.id, text=text, parse_mode='HTML')
+
+
+@bot.message_handler(func=lambda message: message.text == "Самбірська РО ТЧХУ")
+def sambir_info_button(message):
+    keyboard = types.ReplyKeyboardMarkup(row_width=2, resize_keyboard=True)
+    keyboard.add(types.KeyboardButton("Напрямки організації"), types.KeyboardButton("Гуманітарна допомога для ВПО"),
+                 types.KeyboardButton("Гуманітарна допомога для ВПО"), types.KeyboardButton(MAIN_MENU_BUTTON))
+    bot.send_message(message.chat.id, "Наша організація розвиває декілька напрямків:", reply_markup=keyboard)
+
+
+@bot.message_handler(func=lambda message: message.text == "Напрямки організації")
+def sambir_info(message):
+    with open('help_directions.txt', 'r', encoding='utf-8') as file:
+        text = file.read()
+    bot.send_message(message.chat.id, text=text, parse_mode='HTML')
+
+
+
+
 
 
 @app.route('/' + TOKEN, methods=['POST'])

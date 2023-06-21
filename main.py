@@ -23,7 +23,7 @@ def create_main_menu_keyboard():
     keyboard.add(*[types.KeyboardButton(name) for name in [
         'Безпека', 'Допомога', 'Заклади охорони здоров\'я',
         'Освітні заклади', 'Заходи для відпочинку та розвитку',
-        'Корисні посилання', 'Самбірська РО ТЧХУ'
+        'Корисні посилання', 'Самбірська РО ТЧХУ', 'Карта-путівник для ВПО'
     ]])
     return keyboard
 
@@ -76,6 +76,7 @@ def help_button(message):
         bot.send_photo(message.chat.id, photo=image)
     keyboard = types.ReplyKeyboardMarkup(row_width=2, resize_keyboard=True)
     keyboard.add(types.KeyboardButton("Фінансова допомога"), types.KeyboardButton("Гуманітарна допомога"),
+                 types.KeyboardButton("Психологічна допомога"),
                  types.KeyboardButton("Житло"), types.KeyboardButton("Одяг"),
                  types.KeyboardButton("Контакти і місцерозташування служб"),
                  types.KeyboardButton(MAIN_MENU_BUTTON))
@@ -97,6 +98,15 @@ def humanitarian_aid_message(message):
     with open('images/humanitarian.png', 'rb') as image:
         bot.send_photo(message.chat.id, photo=image)
     with open('humanitarian_help_text.txt', 'r', encoding='utf-8') as file:
+        text = file.read()
+    bot.send_message(message.chat.id, text=text, parse_mode='HTML')
+
+
+@bot.message_handler(func=lambda message: message.text == "Психологічна допомога")
+def humanitarian_aid_message(message):
+    with open('images/psycho.PNG', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
+    with open('psycho.txt', 'r', encoding='utf-8') as file:
         text = file.read()
     bot.send_message(message.chat.id, text=text, parse_mode='HTML')
 
@@ -271,8 +281,9 @@ def sambir_info_links(message):
     with open('help_directions.txt', 'r', encoding='utf-8') as file:
         text = file.read()
     bot.send_message(message.chat.id, text=text, parse_mode='HTML')
-    bot.send_message(message.chat.id, "Instagram:\nhttps://www.instagram.com/redcross.sambir/?igshid=YmM0MjE2YWMzOA%3D%3D\n"
-                                      "Facebook:\nhttps://www.facebook.com/profile.php?id=100083105293557")
+    bot.send_message(message.chat.id,
+                     "Instagram:\nhttps://www.instagram.com/redcross.sambir/?igshid=YmM0MjE2YWMzOA%3D%3D\n"
+                     "Facebook:\nhttps://www.facebook.com/profile.php?id=100083105293557")
 
 
 @bot.message_handler(func=lambda message: message.text == "Отримати гуманітарну допомогу")
@@ -280,12 +291,12 @@ def get_hum_help(message):
     with open('humanitarian_aid_info.txt', 'r', encoding='utf-8') as file:
         text = file.read()
     bot.send_message(message.chat.id, text=text, parse_mode='HTML')
-    bot.send_message(message.chat.id, "https://docs.google.com/forms/d/1OnLFgKkffS5UY2FvLlD0FRkZuTJ2Na0pYeQCDuUw9d8/viewform?edit_requested=true")
+    bot.send_message(message.chat.id,
+                     "https://docs.google.com/forms/d/1OnLFgKkffS5UY2FvLlD0FRkZuTJ2Na0pYeQCDuUw9d8/viewform?edit_requested=true")
     bot.send_message(message.chat.id, "А також долучайся до наших соц.мереж❤️")
     bot.send_message(message.chat.id,
-                    "Instagram:\nhttps://www.instagram.com/redcross.sambir/?igshid=YmM0MjE2YWMzOA%3D%3D\n"
-                    "Facebook:\nhttps://www.facebook.com/profile.php?id=100083105293557")
-
+                     "Instagram:\nhttps://www.instagram.com/redcross.sambir/?igshid=YmM0MjE2YWMzOA%3D%3D\n"
+                     "Facebook:\nhttps://www.facebook.com/profile.php?id=100083105293557")
 
 
 @bot.message_handler(func=lambda message: message.text == "Хочу стати волонтером")
@@ -299,10 +310,13 @@ def volunteer(message):
                      "Facebook:\nhttps://www.facebook.com/profile.php?id=100083105293557")
 
 
-
-
-
-
+@bot.message_handler(func=lambda message: message.text == 'Карта-путівник для ВПО')
+def cafe_message(message):
+    with open('images/map.PNG', 'rb') as image:
+        bot.send_photo(message.chat.id, photo=image)
+    with open('map.txt', 'r', encoding='utf-8') as file:
+        text = file.read()
+    bot.send_message(message.chat.id, text=text, parse_mode='HTML')
 
 
 @app.route('/' + TOKEN, methods=['POST'])
